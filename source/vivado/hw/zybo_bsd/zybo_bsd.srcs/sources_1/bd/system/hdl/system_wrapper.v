@@ -1,3 +1,12 @@
+//Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+//--------------------------------------------------------------------------------
+//Tool Version: Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
+//Date        : Sun Jun  4 22:14:34 2017
+//Host        : Tomoyuki-PC running 64-bit Service Pack 1  (build 7601)
+//Command     : generate_target system_wrapper.bd
+//Design      : system_wrapper
+//Purpose     : IP block netlist
+//--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
 module system_wrapper
@@ -150,17 +159,17 @@ module system_wrapper
   wire [3:0]leds_4bits_tri_o;
   wire [3:0]sws_4bits_tri_i;
 
-IOBUF iic_0_scl_iobuf
+  IOBUF iic_0_scl_iobuf
        (.I(iic_0_scl_o),
         .IO(iic_0_scl_io),
         .O(iic_0_scl_i),
         .T(iic_0_scl_t));
-IOBUF iic_0_sda_iobuf
+  IOBUF iic_0_sda_iobuf
        (.I(iic_0_sda_o),
         .IO(iic_0_sda_io),
         .O(iic_0_sda_i),
         .T(iic_0_sda_t));
-system system_i
+  system system_i
        (.AC_BCLK(AC_BCLK),
         .AC_MCLK(AC_MCLK),
         .AC_MUTE_N(AC_MUTE_N),
